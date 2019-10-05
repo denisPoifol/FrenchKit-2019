@@ -32,6 +32,3 @@ extension TableSectionViewModel: DifferentiableSection where
 
     public typealias Collection = [CellViewModel]
 }
-
-extension String: Differentiable {}
-extension Never: Differentiable {}

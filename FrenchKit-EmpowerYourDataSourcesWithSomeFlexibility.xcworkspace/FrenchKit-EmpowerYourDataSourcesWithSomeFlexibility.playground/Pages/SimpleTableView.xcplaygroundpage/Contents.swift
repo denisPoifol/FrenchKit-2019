@@ -2,6 +2,9 @@ import UIKit
 import DifferenceKit
 import PlaygroundSupport
 
+
+
+
 let viewController = ViewController()
 PlaygroundPage.current.liveView = viewController
 PlaygroundPage.current.needsIndefiniteExecution = true
@@ -17,7 +20,7 @@ let viewModel = SimpleTableViewModel(
     ]
 )
 viewController.configure(with: viewModel)
-// Play me here to see the configurated viewController
+//: ### Play me here to see the configurated viewController
 
 let shuffledViewModel = SimpleTableViewModel(
     cells: [
@@ -30,7 +33,7 @@ let shuffledViewModel = SimpleTableViewModel(
     ].shuffled()
 )
 viewController.configure(with: shuffledViewModel)
-// PLay me here to see the updated tableView with animations
+//: ### Play me here to see the updated tableView with animations
 
 
 let sectionnedTableViewModel = SimpleTableViewModel(
@@ -41,5 +44,5 @@ let sectionnedTableViewModel = SimpleTableViewModel(
     ]
 )
 viewController.configure(with: sectionnedTableViewModel)
-// PLay me here to see the updated tableView with animations
+//: ### Play me here to see the updated tableView with animations
 //: [MultipleCellKinds](@next)

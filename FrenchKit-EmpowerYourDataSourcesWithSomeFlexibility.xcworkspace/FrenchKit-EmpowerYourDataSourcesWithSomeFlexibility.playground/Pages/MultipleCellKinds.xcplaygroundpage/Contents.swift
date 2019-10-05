@@ -1,4 +1,4 @@
-//: [SimpleTableView](@previous)
+//: [SimpleTableView](SimpleTableView)
 
 import UIKit
 import DifferenceKit
@@ -19,7 +19,8 @@ let viewModel = MultipleCellTableViewModel(
     ]
 )
 viewController.configure(with: viewModel)
-// Play me here to see the configurated viewController
+//: ### Play me here to see the configurated viewController
+
 
 let shuffledViewModel = MultipleCellTableViewModel(
     cells: [
@@ -32,8 +33,7 @@ let shuffledViewModel = MultipleCellTableViewModel(
     ].shuffled()
 )
 viewController.configure(with: shuffledViewModel)
-// Play me here to see the updated tableView with animations
-
+//: ### Play me here to see the updated tableView with animations
 
 let sectionnedTableViewModel = MultipleCellTableViewModel(
     sections: [
@@ -43,4 +43,4 @@ let sectionnedTableViewModel = MultipleCellTableViewModel(
     ]
 )
 viewController.configure(with: sectionnedTableViewModel)
-// PLay me here to see the updated tableView with animations
+//: ### Play me here to see the updated tableView with animations
